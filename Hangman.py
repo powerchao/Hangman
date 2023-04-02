@@ -56,7 +56,7 @@ while generate_clue() != target_word and player_lives > 0:
     print(generate_guessed_letters() + "\n")
     guessed_letter = input("Which letter are you guessing?\n").lower()
     if not guessed_letter.isalpha() or len(guessed_letter)!=1:
-        print("That input is not valid, please enter a single letter with no punctuation or symbols.")
+        print("That input is not valid, please enter a single letter with no punctuation or symbols.\n")
     elif guessed_letter not in guessed_letter_list:
         guessed_letter_list += guessed_letter
         matches_word = False
